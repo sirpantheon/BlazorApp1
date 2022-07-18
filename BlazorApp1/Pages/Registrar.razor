@@ -1,0 +1,25 @@
+﻿@page "/Registrar"
+
+<PageTitle>Registrar</PageTitle>
+
+<h1>Registrar</h1>
+
+<label>Nome</label>
+<input type="text" name="nome"/>
+
+<label>Sobrenome</label>
+<input type="text" name="sobrenome"/>
+
+<label>Senha</label>
+<input type="password" name="senha"/>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Enviar</button>
+
+@code {
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+}

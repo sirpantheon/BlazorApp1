@@ -1,0 +1,54 @@
+﻿@page "/Planilha"
+@inject HttpClient Http
+
+<PageTitle>Planilha</PageTitle>
+
+<h1>Planilha</h1>
+
+@if (forecasts == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Sobrenome</th>
+                <th>Senha</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var forecast in forecasts)
+            {
+                <tr>
+    
+                    <td>@forecast.nome</td>
+                    <td>@forecast.sobrenome</td>
+                    <td>@forecast.senha</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private WeatherForecast[]? forecasts;
+
+    protected override async Task OnInitializedAsync()
+    {
+        forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("sample-data/weather.json");
+    }
+
+    public class WeatherForecast
+    {
+        public string nome { get; set; }
+
+        public string sobrenome { get; set; }
+
+        public string senha { get; set; }
+
+
+    }
+}

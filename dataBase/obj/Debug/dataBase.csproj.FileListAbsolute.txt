@@ -1,0 +1,6 @@
+C:\Users\SirPantheon\source\repos\BlazorApp1\dataBase\bin\Debug\dataBase.dll
+C:\Users\SirPantheon\source\repos\BlazorApp1\dataBase\bin\Debug\dataBase.pdb
+C:\Users\SirPantheon\source\repos\BlazorApp1\dataBase\obj\Debug\dataBase.csproj.AssemblyReference.cache
+C:\Users\SirPantheon\source\repos\BlazorApp1\dataBase\obj\Debug\dataBase.csproj.CoreCompileInputs.cache
+C:\Users\SirPantheon\source\repos\BlazorApp1\dataBase\obj\Debug\dataBase.dll
+C:\Users\SirPantheon\source\repos\BlazorApp1\dataBase\obj\Debug\dataBase.pdb
